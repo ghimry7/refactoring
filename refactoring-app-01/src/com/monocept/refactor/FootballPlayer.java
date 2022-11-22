@@ -2,38 +2,15 @@ package com.monocept.refactor;
 
 public class FootballPlayer {
 
-	private double passerRating; // Specific to QBs
-	private int rushingYards; // Specific to RBs & QBs
-	private int receivingYards; // Specific to RBs & WRs
-	private int totalTackles; // Specific to DEF
-	private int interceptions; // Specific to DEF
-	private int fieldGoals; // Specific to Kickers
-	private double avgPunt; // Specific to Punters
-	private double avgKickoffReturn; // Specific to Special Teams
-	private double avgPuntReturn; // Specific to Special Teams
-
-	/*
-	 * 
-	 * FootballPlayer(double passerRating, int rushingYards){
-	 * 
-	 * this.passerRating = passerRating; this.rushingYards = rushingYards;
-	 * 
-	 * }
-	 * 
-	 * FootballPlayer(int rushingYards){
-	 * 
-	 * this.rushingYards = rushingYards;
-	 * 
-	 * }
-	 * 
-	 * Can't do this because the signature must be different
-	 * 
-	 * FootballPlayer(int receivingYards){
-	 * 
-	 * this.receivingYards = receivingYards;
-	 * 
-	 * }
-	 */
+	private double passerRating; 
+	private int rushingYards;
+	private int receivingYards; 
+	private int totalTackles;
+	private int interceptions; 
+	private int fieldGoals; 
+	private double avgPunt; 
+	private double avgKickoffReturn;
+	private double avgPuntReturn;
 
 	private FootballPlayer(double passerRating, int rushingYards, int receivingYards, int totalTackles,
 			int interceptions, int fieldGoals, double avgPunt, double avgKickoffReturn, double avgPuntReturn) {
@@ -73,10 +50,6 @@ public class FootballPlayer {
 	}
 
 	public static void main(String[] args) {
-
-		// The creation methods
-		// Explain what type of player is being made
-		// Are easier to understand (especially the attributes)
 
 		FootballPlayer aronRodgers = FootballPlayer.createQB(108.0, 259);
 
