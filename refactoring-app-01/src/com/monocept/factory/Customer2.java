@@ -2,7 +2,7 @@ package com.monocept.factory;
 
 //Replace constructors with factories
 
-public abstract class Customer2 {
+public class Customer2 {
 
 	private String custRating;
 	static final int PREMIER = 2;
