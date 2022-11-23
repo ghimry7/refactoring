@@ -2,7 +2,7 @@ package com.monocept.factory;
 
 //Replace constructors with factories
 
-public class Customer2 {
+public abstract class Customer2 {
 
 	private String custRating;
 	static final int PREMIER = 2;
@@ -55,7 +55,7 @@ class CustomerFactory {
 	public Customer2 getCustomer(String custName) {
 
 		try {
-
+			System.out.println(custName);
 
 			return (Customer2) Class.forName(custName).newInstance();
 
